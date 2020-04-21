@@ -17,8 +17,8 @@ public class Main {
 
         try {
             CharStream cs = CharStreams.fromFileName(source);
-            LITTLE.LITTLELexer lexer = new LITTLELexer(cs);
-            LITTLE.LITTLEParser parser = new LITTLEParser(new CommonTokenStream(lexer));
+            LITTLELexer lexer = new LITTLELexer(cs);
+            LITTLEParser parser = new LITTLEParser(new CommonTokenStream(lexer));
 
             lexer.removeErrorListener(ConsoleErrorListener.INSTANCE);
             parser.removeErrorListener(ConsoleErrorListener.INSTANCE);
