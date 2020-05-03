@@ -10,8 +10,8 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String args[]) {
-        //String source = args[0];
-        String source = "out/release/TestFiles/Step4/inputs/test_combination.micro";
+        String source = args[0];
+        // String source = "out/release/TestFiles/Step4/inputs/test_combination.micro";
 
         String fileParts[] = source.split("/");
         String fileName = fileParts[(fileParts.length)-1].replace(".micro", "");
