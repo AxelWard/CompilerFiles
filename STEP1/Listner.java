@@ -29,6 +29,8 @@ public class Listner extends LITTLEBaseListener {
             } else {
                 f.append("Token Type: " + v.getSymbolicName(node.getSymbol().getType()) + "\n");
                 f.append("Value: " + node.getText() + "\n");
+                System.out.println("Token Type: " + v.getSymbolicName(node.getSymbol().getType()));
+                System.out.println("Value: " + node.getText());
             }
         } catch (IOException e) {
             e.printStackTrace();
