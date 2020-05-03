@@ -62,7 +62,7 @@ public class AssemblyWriter {
     // addi dest add : computes dest = dest + add
     void createAddi(String dest, String add) {
         try {
-            writer.append("addi " + dest + " " + add);
+            writer.append("addi " + add + " " + dest);
             writer.append("\n");
         } catch(IOException e) {
             e.printStackTrace();
@@ -73,7 +73,7 @@ public class AssemblyWriter {
     // addr dest add : computes dest = dest + add
     void createAddr(String dest, String add) {
         try {
-            writer.append("addi " + dest + " " + add);
+            writer.append("addi " + add + " " + dest);
             writer.append("\n");
         } catch(IOException e) {
             e.printStackTrace();
@@ -84,7 +84,7 @@ public class AssemblyWriter {
     // subi dest add : computes dest = dest - sub
     void createSubi(String dest, String sub) {
         try {
-            writer.append("subi " + dest + " " + sub);
+            writer.append("subi " + sub + " " + dest);
             writer.append("\n");
         } catch(IOException e) {
             e.printStackTrace();
@@ -95,7 +95,7 @@ public class AssemblyWriter {
     // subr dest add : computes dest = dest - sub
     void createSubr(String dest, String sub) {
         try {
-            writer.append("subr " + dest + " " + sub);
+            writer.append("subr " + sub + " " + dest);
             writer.append("\n");
         } catch(IOException e) {
             e.printStackTrace();
@@ -106,7 +106,7 @@ public class AssemblyWriter {
     // muli dest add : computes dest = dest * mul
     void createMuli(String dest, String mul) {
         try {
-            writer.append("muli " + dest + " " + mul);
+            writer.append("muli " + mul + " " + dest);
             writer.append("\n");
         } catch(IOException e) {
             e.printStackTrace();
@@ -117,7 +117,7 @@ public class AssemblyWriter {
     // mulr dest add : computes dest = dest * mul
     void createMulr(String dest, String mul) {
         try {
-            writer.append("mulr " + dest + " " + mul);
+            writer.append("mulr " + mul + " " + dest);
             writer.append("\n");
         } catch(IOException e) {
             e.printStackTrace();
@@ -128,7 +128,7 @@ public class AssemblyWriter {
     // divi dest add : computes dest = dest / div
     void createDivi(String dest, String div) {
         try {
-            writer.append("divi " + dest + " " + div);
+            writer.append("divi " + div + " " + dest);
             writer.append("\n");
         } catch(IOException e) {
             e.printStackTrace();
@@ -139,7 +139,7 @@ public class AssemblyWriter {
     // divr dest add : computes dest = dest / div
     void createDivr(String dest, String div) {
         try {
-            writer.append("divr " + dest + " " + div);
+            writer.append("divr " + div + " " + dest);
             writer.append("\n");
         } catch(IOException e) {
             e.printStackTrace();
