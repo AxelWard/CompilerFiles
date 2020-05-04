@@ -50,14 +50,13 @@ public class SymbolTable {
             if(values.get(i).equals("")) {
                 // Do nothing
             } else {
-                System.out.print(" \"value\"");
+                System.out.print(" value \"");
                 System.out.print(values.get(i));
+                System.out.print("\"");
             }
 
             System.out.println("");
         }
-
-        System.out.println("");
     }
 
     public boolean checkTable(String n) {

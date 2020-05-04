@@ -9,6 +9,12 @@ public class TableStack {
     }
 
     public void addTable(SymbolTable s) {
+        System.out.println("");
+        s.print_table();
+        stack.add(s);
+    }
+
+    public void addTable(SymbolTable s, String skip) {
         s.print_table();
         stack.add(s);
     }

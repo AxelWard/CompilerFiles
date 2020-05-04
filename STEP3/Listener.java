@@ -32,7 +32,7 @@ public class Listener extends LITTLEBaseListener {
             }
         }
 
-        TS.addTable(current);
+        TS.addTable(current, "skip");
     }
 
     @Override
