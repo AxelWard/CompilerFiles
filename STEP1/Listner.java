@@ -12,11 +12,6 @@ public class Listner extends LITTLEBaseListener {
 
     Listner(Vocabulary voc, String outputPath) {
         this.v = voc;
-        try {
-            f = new FileWriter(outputPath);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     @Override
@@ -25,10 +20,8 @@ public class Listner extends LITTLEBaseListener {
 
         try {
             if(v.getSymbolicName(node.getSymbol().getType()).equals("EOF")) {
-                f.flush();
+
             } else {
-                f.append("Token Type: " + v.getSymbolicName(node.getSymbol().getType()) + "\n");
-                f.append("Value: " + node.getText() + "\n");
                 System.out.println("Token Type: " + v.getSymbolicName(node.getSymbol().getType()));
                 System.out.println("Value: " + node.getText());
             }
